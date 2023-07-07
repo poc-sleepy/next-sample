@@ -1,5 +1,6 @@
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 
 type ISRProps = {
   message: string;
@@ -17,6 +18,16 @@ const ISR: NextPage<ISRProps> = (props) => {
       <main>
         <p>このページはISR。60秒ごとに再生成されるページです。</p>
         <p>{message}</p>
+        <p>
+          <Link href="/ssr" legacyBehavior>
+            <a>Server Side Rendering</a>
+          </Link>
+        </p>
+        <p>
+          <Link href="/ssg" legacyBehavior>
+            <a>Static Site Generation</a>
+          </Link>
+        </p>
       </main>
     </div>
   );
