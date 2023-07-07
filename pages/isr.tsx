@@ -28,6 +28,11 @@ const ISR: NextPage<ISRProps> = (props) => {
             <a>Static Site Generation</a>
           </Link>
         </p>
+        <p>
+          <Link href={{ pathname: '/ssg', query: 'Hello' }}>
+            <button>Go To SSG</button>
+          </Link>
+        </p>
       </main>
     </div>
   );
