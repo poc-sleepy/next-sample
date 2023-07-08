@@ -1,9 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+import styled from 'styled-components';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
+const H2 = styled.h2`
+  color: red;
+`;
 
 export default function Home() {
   return (
@@ -57,9 +61,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <H2>
               Docs <span>-&gt;</span>
-            </h2>
+            </H2>
             <p>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
@@ -71,9 +75,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <H2>
               Learn <span>-&gt;</span>
-            </h2>
+            </H2>
             <p>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
@@ -85,9 +89,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <H2>
               Templates <span>-&gt;</span>
-            </h2>
+            </H2>
             <p>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
@@ -99,9 +103,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>
+            <H2>
               Deploy <span>-&gt;</span>
-            </h2>
+            </H2>
             <p>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
@@ -110,5 +114,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
