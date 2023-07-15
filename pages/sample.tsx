@@ -1,3 +1,4 @@
+import { Input } from '@/components/Input';
 import { StyledButton } from '@/components/StyledButton';
 
 const Sample = () => {
@@ -5,6 +6,7 @@ const Sample = () => {
     <>
       <span>さんぷるぺえじ</span>
       <StyledButton variant="primary">すたいるぼたん</StyledButton>
+      <Input label="おなまえ" />
     </>
   );
 };
