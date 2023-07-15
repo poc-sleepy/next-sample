@@ -6,7 +6,7 @@ const Sample = () => {
     <>
       <span>さんぷるぺえじ</span>
       <StyledButton variant="primary">すたいるぼたん</StyledButton>
-      <Input label="おなまえ" />
+      <Input label="おなまえ" id="name" />
     </>
   );
 };
